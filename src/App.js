@@ -6,8 +6,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 import Users from "./users/Users";
 import Navbar from "./navbar/Navbar";
+import Page from "./test/Page";
+import Details from "./users/Details";
 
 function App() {
 
@@ -20,6 +23,8 @@ function App() {
         <Routes>
           <Route path='/users' element={<Users/>} />
           <Route path='/tasks' element={<Tasks/>} />
+          <Route path='/page' element={<Page/>} />
+          <Route path='/details/:id' element={<Details/>} />
         </Routes>
 
       </BrowserRouter>

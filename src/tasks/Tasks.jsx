@@ -40,7 +40,7 @@ export default function Tasks() {
             {
                 tasks.map((task,index)=>(
                     <>
-                  <Task  data={task}   />
+                  <Task unique={index}  data={task}   />
                   <button onClick={()=>remove(index)} className='btn btn-secondary mt-2'>delete</button>
                     </>
                  ))          
